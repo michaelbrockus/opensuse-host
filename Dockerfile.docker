@@ -31,6 +31,10 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
        mono-core \
        ruby
 
+RUN gem install \
+        bundler \
+        rake
+
 RUN pip3 -q install --upgrade pip \
     && python3 -m pip -q install \
        meson==0.55.3 \
