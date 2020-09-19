@@ -29,7 +29,8 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
        cargo \
        java-14-openjdk-devel \
        mono-core \
-       ruby
+       ruby \
+    && zypper --non-interactive clean --all
 
 RUN gem install \
         bundler \
