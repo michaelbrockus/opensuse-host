@@ -17,6 +17,7 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
        python3-wheel \
        python3-setuptools \
        git \
+       ccache \
        cppcheck \
        gcc \
        gcc-c++ \
