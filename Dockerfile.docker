@@ -30,6 +30,7 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
        java-14-openjdk-devel \
        mono-core \
        ruby \
+       gnustep \
     && zypper --non-interactive clean --all
 
 RUN gem install \
