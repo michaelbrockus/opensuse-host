@@ -25,7 +25,6 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
        gcc-obj-c++ \
        gcc-fortran \
        gcc-d \
-       ncurses \
        rust \
        cargo \
        java-14-openjdk-devel \
