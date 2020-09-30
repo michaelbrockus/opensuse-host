@@ -17,6 +17,9 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
        python3-wheel \
        python3-setuptools \
        git \
+       gtk3-devel \
+       gtkmm3-devel \
+       gobject-introspection-devel \
        ccache \
        cppcheck \
        gcc \
@@ -30,7 +33,6 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
        java-14-openjdk-devel \
        mono-core \
        ruby \
-       gnustep \
     && zypper --non-interactive clean --all
 
 RUN gem install \
