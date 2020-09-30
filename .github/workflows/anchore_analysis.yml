@@ -21,6 +21,7 @@ jobs:
     - name: Run the local Anchore scan action itself with GitHub Advanced Security code scanning integration enabled
       uses: anchore/scan-action@v2
       with:
+        path: "."
         image-reference: "localbuild/testimage:latest"
         dockerfile-path: "Dockerfile.docker"
         acs-report-enable: true
