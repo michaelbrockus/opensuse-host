@@ -43,9 +43,8 @@ RUN pip3 -q install --upgrade pip \
        pyinstaller==4.0 \
        ninja==1.10.0.post2 \
        cmake==3.18.2 \
-       PyQt5==5.15.0 \
+       PyGObject==3.38.0 \
        pytest==6.0.1 \
-       pytest-qt==3.3.0 \
        pytest-mock==3.3.1 \
        pytest-xdist==2.1.0 \
        pytest-benchmark==3.2.3
