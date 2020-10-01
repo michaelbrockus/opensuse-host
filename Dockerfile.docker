@@ -21,6 +21,7 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
        gtkmm3-devel \
        gobject-introspection-devel \
        ccache \
+       pkg-config \
        cppcheck \
        gcc \
        gcc-c++ \
