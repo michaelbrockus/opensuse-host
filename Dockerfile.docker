@@ -12,10 +12,12 @@ ADD run_tests.py .
 
 RUN zypper --non-interactive patch --with-update --with-optional && zypper --non-interactive update \
     && zypper install -y \
-       python3 \
+       python3-devel \
        python3-pip \
        python3-wheel \
        python3-setuptools \
+       cairo-devel \
+       pkg-config \
        git \
        gtk3-devel \
        gtkmm3-devel \
