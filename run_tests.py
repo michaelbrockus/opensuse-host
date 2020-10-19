@@ -13,14 +13,6 @@ def exe_exists(prog_name: str) -> None:
     return False if not which(prog_name) else True
 
 
-def test_has_ruby():
-    assert exe_exists('ruby') is True
-    assert exe_exists('gem') is True
-    assert exe_exists('rake') is True
-    assert exe_exists('bundle') is True
-    assert exe_exists('irb') is True
-
-
 def test_has_python3():
     assert exe_exists('python3') is True
     assert exe_exists('pip3') is True
@@ -31,7 +23,6 @@ def test_have_build_systems():
     assert exe_exists('cmake') is True
     assert exe_exists('cargo') is True
     assert exe_exists('ninja') is True
-    assert exe_exists('rake') is True
 
 
 def test_have_ci_tools():
