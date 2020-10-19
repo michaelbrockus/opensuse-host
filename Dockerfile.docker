@@ -16,16 +16,11 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
        python3-pip \
        python3-wheel \
        python3-setuptools \
-       cairo-devel \
-       pkg-config \
        git \
        ccache \
-       pkg-config \
        cppcheck \
        gcc \
        gcc-c++ \
-       gcc-objc \
-       gcc-obj-c++ \
        gcc-fortran \
        gcc-d \
        rust \
