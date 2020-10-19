@@ -19,9 +19,6 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
        cairo-devel \
        pkg-config \
        git \
-       gtk3-devel \
-       gtkmm3-devel \
-       gobject-introspection-devel \
        ccache \
        pkg-config \
        cppcheck \
@@ -35,21 +32,16 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
        cargo \
        java-14-openjdk-devel \
        mono-core \
-       ruby \
     && zypper --non-interactive clean --all
-
-RUN gem install \
-        bundler \
-        rake
 
 RUN pip3 -q install --upgrade pip \
     && python3 -m pip -q install \
        meson==0.55.3 \
        pyinstaller==4.0 \
+       scan-build==2.0.19 \
        ninja==1.10.0.post2 \
        cmake==3.18.2 \
-       pycairo==1.19.1 \
-       PyGObject==3.38.0 \
+       PyQt5==5.15.1 \
        pytest==6.0.1 \
        pytest-mock==3.3.1 \
        pytest-xdist==2.1.0 \
