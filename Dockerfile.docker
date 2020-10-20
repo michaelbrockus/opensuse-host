@@ -16,6 +16,7 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
        python3-pip \
        python3-wheel \
        python3-setuptools \
+       python-scan-build \
        git \
        ccache \
        cppcheck \
@@ -33,7 +34,6 @@ RUN pip3 -q install --upgrade pip \
     && python3 -m pip -q install \
        meson==0.55.3 \
        pyinstaller==4.0 \
-       scan-build==2.0.19 \
        ninja==1.10.0.post2 \
        cmake==3.18.2 \
        PyQt5==5.15.1 \
