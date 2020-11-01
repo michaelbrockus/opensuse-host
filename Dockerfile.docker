@@ -32,12 +32,12 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
 
 RUN pip3 -q install --upgrade pip \
     && python3 -m pip -q install \
-       meson==0.55.3 \
+       meson==0.56.0 \
        pyinstaller==4.0 \
        ninja==1.10.0.post2 \
-       cmake==3.18.2 \
+       cmake==3.18.2.post1 \
        PyQt5==5.15.1 \
-       pytest==6.0.1 \
+       pytest==6.1.2 \
        pytest-mock==3.3.1 \
        pytest-xdist==2.1.0 \
        pytest-benchmark==3.2.3
