@@ -17,7 +17,7 @@ jobs:
             docker-compose --file docker-compose.test.yml build
             docker-compose --file docker-compose.test.yml run sut
           else
-            docker build . --file Dockerfile.docker
+            docker build . --file Dockerfile
           fi
   push:
     # Ensure test job passes before pushing image.
@@ -45,7 +45,7 @@ jobs:
         with:
           builder: ${{ steps.buildx.outputs.name }}
           context: .
-          file: ./Dockerfile.docker
+          file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/opensuse-host:latest
       -
