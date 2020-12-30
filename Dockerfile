@@ -8,8 +8,6 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV LANG 'C.UTF-8'
 ENV CI 1
 
-ADD run_tests.py .
-
 RUN zypper --non-interactive patch --with-update --with-optional && zypper --non-interactive update \
     && zypper install -y \
        python3-devel \
@@ -42,5 +40,3 @@ RUN pip3 -q install --upgrade pip \
        pytest-mock==3.3.1 \
        pytest-xdist==2.1.0 \
        pytest-benchmark==3.2.3
-
-CMD [ "pytest", "-v", "run_tests.py"]
