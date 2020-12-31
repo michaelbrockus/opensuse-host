@@ -20,12 +20,10 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
        cppcheck \
        gcc \
        gcc-c++ \
-       gcc-fortran \
        gcc-d \
        rust \
        cargo \
        java-14-openjdk-devel \
-       mono-core \
        openssl-devel \
     && zypper --non-interactive clean --all
 
