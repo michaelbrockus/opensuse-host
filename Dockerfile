@@ -29,7 +29,7 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
 
 RUN pip3 -q install --upgrade pip \
     && python3 -m pip -q install \
-       meson==0.56.0 \
+       meson==0.56.2 \
        pyinstaller==4.0 \
        ninja==1.10.0.post2 \
        cmake==3.18.2.post1 \
