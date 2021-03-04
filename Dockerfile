@@ -24,7 +24,7 @@ RUN zypper --non-interactive patch --with-update --with-optional && zypper --non
        rust \
        cargo \
        java-14-openjdk-devel \
-       openssl \
+       openssh \
     && zypper --non-interactive clean --all
 
 RUN pip3 -q install --upgrade pip \
